@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Rechner</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-purple-200">
+    <section class="grid place-items-center h-screen w-screen text-xl">
+      <form
+        class="flex flex-col space-y-4 bg-purple-400 p-6 rounded-md"
+        action="/"
+        method="post"
+      >
+        <label for="gewicht">Gewicht:</label>
+        <input
+          class="rounded pl-2"
+          type="text"
+          id="gewicht"
+          name="gewicht"
+          placeholder="Gewicht in kg"
+        />
+        <label for="größe">Größe:</label>
+        <input
+          class="rounded pl-2"
+          type="text"
+          id="größe"
+          name="größe"
+          placeholder="Größe in meter"
+        />
+        <button
+          type="submit"
+          class="bg-purple-600 px-3 text-purple-100 font-semibold rounded-lg py-1"
+        >
+          Eingabe
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
